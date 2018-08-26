@@ -1,0 +1,268 @@
+/*----------------------------------------------------
+ 元素：基本样式
+-----------------------------------------------------*/
+html,body {
+	position: relative;
+	font-family: "Microsoft YaHei";
+	background: #4e5359 url(../images/bg.png) repeat;
+	color: #666;
+	text-align: center;
+	overflow-y: auto;
+}
+/*--------------------------
+ 元素：扫码登录
+---------------------------*/
+.scan-box {
+	position: relative;
+	height: 380px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.scan-box .scan-box-title {
+	height: 50px;
+	line-height: 50px;
+	font-size: 28px;
+	color: #fff;
+	margin: 0 auto 16px;
+	text-shadow: 0 2px 0 #333;
+}
+
+.scan-box .scan-box-qrcode {
+	width: 256px;
+	height: 256px;
+	margin: 0px auto;
+	padding: 5px;
+}
+
+.scan-box .scan-box-qrcode .qrcode {
+	position: relative;
+	width: auto;
+	box-shadow: 0 4px 3px #333;
+	z-index: 101;
+	border: 10px solid #fff;
+	background: #fff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.scan-box .info {
+	margin: 0 auto;
+	margin-top: 28px;
+}
+
+.scan-box .loginTip {
+	background: url(../images/scan_middle.png) repeat-x scroll 0 0 transparent;
+	height: 48px;
+	line-height: 46px;
+	color: #B4B7BC;
+	font-size: 15px;
+	display: inline-block;
+	margin: 0 auto;
+	width: 260px;
+}
+
+.scan-box .loginTipL {
+	background: url(../images/scan_left.png) no-repeat scroll 0 0 transparent;
+	display: block;
+	float: left;
+	height: 48px;
+	margin-left: -26px;
+	width: 26px;
+}
+
+.scan-box .loginTipR {
+	background: url(../images/scan_right.png) no-repeat scroll 0 0 transparent;
+	display: block;
+	float: right;
+	height: 48px;
+	margin-right: -26px;
+	width: 26px;
+}
+
+.scan-box .msgBox {
+	color: #bdc6cb;
+	margin: 0 auto;
+	text-align: left;
+	text-shadow: 0 1px 0px #505050;
+	width: 328px;
+	margin-top: -7px;
+	display: none;
+}
+
+.scan-box .msgBox h3 {
+	font-size: 14px;
+}
+
+.scan-box .msgBox p {
+	font-size: 14px;
+	margin: 0 20px;
+}
+
+.scan-box .msgBox .msgBoxTop {
+	background: url(../images/scan_top.png) no-repeat scroll 0 0 transparent;
+	height: 36px;
+	width: 328px;
+}
+
+.scan-box .msgBox .msgBoxMid {
+	background: url(../images/scan_mid.png) repeat-y scroll 0 0 transparent;
+	padding: 10px 0 0;
+	width: 328px;
+}
+
+.scan-box .msgBox .msgBoxBtm {
+	background: url(../images/scan_btm.png) no-repeat scroll 0 0 transparent;
+	height: 36px;
+	width: 328px;
+}
+
+.scan-box .msgBox .successMsgTipPic {
+	background: url(../images/button_login.png) no-repeat scroll -121px 0 transparent;
+	height: 86px;
+	width: 81px;
+	margin: -21px 8px -18px 39px;
+	float: left;
+}
+
+.scan-box .msgBox .errorMsgTipPic {
+	background: url(../images/button_login.png) no-repeat scroll -198px 4px transparent;
+	height: 86px;
+	width: 81px;
+	margin: -21px 8px -18px 39px;
+	float: left;
+}
+.guide {
+    width:300px;
+}
+
+.scan-box .guide {
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	margin-left: -120px;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+	z-index: 100;
+}
+
+.mask {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 99;
+	opacity: 0;
+	display: none;
+	background-color: rgb(0, 0, 0);
+}
+
+/*--------------------------
+ 元素：footer
+---------------------------*/
+.footer {
+  margin-top: 45px;
+  color: #242627;
+  color: #242627\9;
+  text-shadow: 0 1px 0 #5B5C5E;
+  font-size: 14px;
+  background: url(../images/button_login.png) no-repeat scroll -12px -181px;
+}
+.footer .recommend_wrp {
+  position: absolute;
+  width: 100%;
+  top: -100px;
+}
+.footer  a {
+  color: #9CA1A4;
+  font-size: 14px;
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+}
+.footer  a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+/*--------------------------
+ 元素：faq
+---------------------------*/
+a.icon_faq {
+  display: block;
+  margin: 0 auto;
+  width: 37px;
+}
+a.icon_faq img {
+  background: url(../images/button_login.png) no-repeat scroll 0px -1px transparent;
+  height: 37px;
+  width: 37px;
+}
+a.icon_faq:active img {
+  background-position: -38px -2px;
+}
+/*--------------------------
+ 元素：关注公众号
+---------------------------*/
+.focusBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	display: none;
+}
+.focusBox-mask{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter:alpha(opacity=60);
+    opacity:0.6;
+}
+.focusBox .focus-ewm{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 430px;
+	height: 490px;
+	margin-left: -215px;
+	margin-top: -245px;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	z-index: 100;
+}
+.focusBox .focus-ewm-tit{
+	line-height: 42px;
+	padding-top: 10px;
+	text-align: center;
+	color: #000;
+	font-size: 28px;
+}
+.focusBox .focus-ewm-con{
+	width: 430px;
+	height: 430px;
+}
+.focusBox .focus-ewm-con img{
+	display: block;
+	width: 430px;
+	height: 430px;
+}
+.focusBox .ewm-close{
+	position: absolute;
+	left: 50%;
+	bottom: -50px;
+	display: block;
+	width: 80px;
+	height: 36px;
+	line-height: 36px;
+	margin-left: -40px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	background: #e14141;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	z-index: 100;
+}
+
+
